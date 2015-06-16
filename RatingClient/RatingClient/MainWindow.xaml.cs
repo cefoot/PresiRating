@@ -31,7 +31,7 @@ namespace RatingClient
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            WebSocket = new WebSocket("ws://cefoot.de:8080/rating-server/rating");
+            WebSocket = new WebSocket("ws://localhost:8080/rating-server/rating");
             WebSocket.OnMessage += ShowRating;
 
             WebSocket.Connect();
